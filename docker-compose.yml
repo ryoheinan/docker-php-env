@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  architecture:
+    container_name: phpenv
+    build: ./config/php
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 9000:80
